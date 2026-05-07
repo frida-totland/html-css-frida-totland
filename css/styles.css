@@ -3,9 +3,11 @@
     src: url(fonts/DINCondensed-Bold.ttf) format("truetype");
 }
 
-body {
+html, body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #121212;
+    padding: 0;
+    margin: 0;
 }
 
 ul li {
@@ -53,7 +55,7 @@ a {
     display: flex;
     justify-content: left;
     gap: 2em;
-    padding: .5em;
+    padding: .5em 0em 0em 1em;
     font-size: 1em;
     color: #0a3641;
 }
@@ -63,11 +65,12 @@ a {
     font-weight: bold;
 }
 
-.front-image {
+header {
     background-image: url(../images/RainyDays_Home1.jpg);
-    background-size: 130%;
-    background-position: right 100% bottom 70%;
-    padding: .5em 1em 20em 1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    background-position: center;
 }
 
 .logo {
