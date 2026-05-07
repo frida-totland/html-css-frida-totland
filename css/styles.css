@@ -1,3 +1,111 @@
+@font-face {
+    font-family: "DIN Condensed";
+    src: url(fonts/DINCondensed-Bold.ttf) format("truetype");
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #121212;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-bar {
+    width: 100%;
+    background-color: #ffaf4e;
+    font-family: "DIN Condensed", Arial, sans-serif;
+    color: #0a3641;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    padding: .5em;
+    margin: 0;
+}
+
+.top-bar-words::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../assets/check.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
+.home-menu {
+    display: flex;
+    justify-content: left;
+    gap: 2em;
+    padding: .5em;
+    font-size: 1em;
+    color: #0a3641;
+}
+
+.home-menu a:hover {
+    color: #0a3641;
+    font-weight: bold;
+}
+
+.front-image {
+    background-image: url(../images/RainyDays_Home1.jpg);
+    background-size: 130%;
+    background-position: right 100% bottom 70%;
+    padding: .5em 1em 20em 1em;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+h1, h2, h3 {
+    font-family: "DIN Condensed", Arial, sans-serif;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffaf4e;
+    color: #0a3641;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #0a3641;
+    color: #fff;
+}
+
+.carousel {
+    background-color: #eef4f6;
+}
+
+.inspiration-grid {
+    background-color: #eef4f6;
+}
+
 footer {
-    background-color: blue;
+    background-color: #0a3641;
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
