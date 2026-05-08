@@ -3,6 +3,16 @@
     src: url(fonts/DINCondensed-Bold.ttf) format("truetype");
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html, body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #121212;
@@ -10,8 +20,10 @@ html, body {
     margin: 0;
 }
 
-ul li {
-    list-style: none;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -19,6 +31,7 @@ a {
     color: inherit;
 }
 
+/* Header and navigation styles */
 .top-bar {
     width: 100%;
     background-color: #ffaf4e;
@@ -36,28 +49,34 @@ a {
 
 .top-bar-words::before {
     content: "";
-
     display: inline-block;
-
     width: 24px;
     height: 24px;
-
     background-image: url("../assets/check.png");
     background-size: contain;
     background-repeat: no-repeat;
-
     margin-right: 8px;
-
     vertical-align: middle;
 }
 
-.home-menu {
-    display: flex;
-    justify-content: left;
-    gap: 2em;
-    padding: .5em 0em 0em 1em;
+.current {
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+/* Home page header and menu styles */
+.home-menu li {
+    display: inline-block;
     font-size: 1em;
     color: #0a3641;
+}
+
+.home-menu a {
+    padding: 20px;
+    display: inline-block;
 }
 
 .home-menu a:hover {
@@ -65,7 +84,7 @@ a {
     font-weight: bold;
 }
 
-header {
+.home-header {
     background-image: url(../images/RainyDays_Home1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,14 +92,11 @@ header {
     background-position: center;
 }
 
-.logo {
-    max-width: 200px;
-}
-
 h1, h2, h3 {
     font-family: "DIN Condensed", Arial, sans-serif;
 }
 
+/* Call to action button styles */
 .cta {
     display: inline-block;
     padding: 10px 20px;
@@ -100,13 +116,21 @@ h1, h2, h3 {
     background-color: #eef4f6;
 }
 
+/* Home page */
 .inspiration-grid {
     background-color: #eef4f6;
 }
 
+/* Footer styles */
 footer {
     background-color: #0a3641;
     color: #fff;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer a:hover {
