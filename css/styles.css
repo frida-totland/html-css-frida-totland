@@ -20,7 +20,7 @@ html, body {
     margin: 0;
 }
 
-nav ul {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -39,7 +39,7 @@ a {
     color: #0a3641;
 }
 
-.top-bar-content {
+.top-bar__content {
     display: flex;
     justify-content: space-evenly;
     gap: 10em;
@@ -47,7 +47,7 @@ a {
     margin: 0;
 }
 
-.top-bar-words::before {
+.top-bar__words::before {
     content: "";
     display: inline-block;
     width: 24px;
@@ -68,23 +68,23 @@ a {
 }
 
 /* Home page header and menu styles */
-.home-menu li {
+.home__menu li {
     display: inline-block;
     font-size: 1em;
     color: #0a3641;
 }
 
-.home-menu a {
+.home__menu a {
     padding: 20px;
     display: inline-block;
 }
 
-.home-menu a:hover {
+.home__menu a:hover {
     color: #0a3641;
     font-weight: bold;
 }
 
-.home-header {
+.home__header {
     background-image: url(../images/RainyDays_Home1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,8 +112,26 @@ h1, h2, h3 {
     color: #fff;
 }
 
+/* Carousel styles */
 .carousel {
     background-color: #eef4f6;
+}
+
+.carousel h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carousel p {
+    text-align: center;
+}
+
+.carousel__images {
+    background-color: #fff;
+    width: auto;
+    height: 300px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 /* Home page */
