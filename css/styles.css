@@ -67,24 +67,20 @@ a {
     max-width: 200px;
 }
 
-/* Home page header and menu styles */
-.home__menu li {
+.navigation li {
     display: inline-block;
     font-size: 1em;
     color: #0a3641;
-}
-
-.home__menu a {
     padding: 20px;
     display: inline-block;
 }
 
-.home__menu a:hover {
+.navigation a:hover {
     color: #0a3641;
     font-weight: bold;
 }
 
-.home__header {
+.header-home {
     background-image: url(../images/RainyDays_Home1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,8 +131,17 @@ h1, h2, h3 {
 }
 
 /* Home page */
+
+.navigation-home {
+}
+
 .inspiration-grid {
     background-color: #eef4f6;
+}
+
+.inspiration-grid img {
+    width: 50%;
+    height: auto;
 }
 
 /* Footer styles */
