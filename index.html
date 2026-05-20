@@ -14,27 +14,38 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header-home">
         <section class="top-bar">
             <nav>
-                <ul class="top-bar-content">
-                    <li class="top-bar-words">QUALITY</li>
-                    <li class="top-bar-words">COMFORT</li>
-                    <li class="top-bar-words">PROTECTION</li>
+                <ul class="top-bar__content">
+                    <li class="top-bar__words">QUALITY</li>
+                    <li class="top-bar__words">COMFORT</li>
+                    <li class="top-bar__words">PROTECTION</li>
                 </ul>
             </nav>
         </section>
-        <section class="front-image">
-            <nav>
-                <ul class="home-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="jackets.html">JACKETS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="sale.html">SALE</a></li>
-                </ul>
-            </nav>
-            <img src="images/RainyDays_Logo.png" alt="RainyDays Logo" class="logo">
-            <a href="jackets.html" class="cta">EXPLORE</a>
+        <section>
+            <div>
+                <nav>
+                    <ul class="navigation navigation-home">
+                        <li><a href="index.html" class="current">HOME</a></li>
+                        <li><a href="jackets.html">JACKETS</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="navigation navigation-home">
+                        <li><input type="search" placeholder="Search..."></li>
+                        <li><i class="fa-solid fa-user" style="color: #0a3641;"></i></li>
+                        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #0a3641;"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="images/RainyDays_Logo.png" alt="RainyDays Logo" class="logo">
+                <a href="jackets.html" class="cta">EXPLORE</a>
+            </div>
         </section>
     </header>
     <main>
@@ -42,10 +53,10 @@
             <h1>BEST SELLERS</h1>
             <p>Top picks built to perform when it matters the most.</p>
             <ul>
-                <li><img src="images/RainyDays_Jacket1.jpg" alt="Red and grey jacket"></li>
-                <li><img src="images/RainyDays_Jacket2.jpg" alt="Black jacket"></li>
-                <li><img src="images/RainyDays_Jacket3.jpg" alt="Red and black jacket"></li>
-                <li><img src="images/RainyDays_Jacket4.jpg" alt="Black and white jacket"></li>
+                <li><img src="images/RainyDays_Jacket1.jpg" alt="Red and grey jacket" class="carousel__images"></li>
+                <li><img src="images/RainyDays_Jacket2.jpg" alt="Black jacket" class="carousel__images"></li>
+                <li><img src="images/RainyDays_Jacket3.jpg" alt="Red and black jacket" class="carousel__images"></li>
+                <li><img src="images/RainyDays_Jacket4.jpg" alt="Black and white jacket" class="carousel__images"></li>
             </ul>
             <a href="jackets.html" class="cta">SEE MORE</a>
         </section>
@@ -59,11 +70,11 @@
                 </p>
             </div>
             <div class="inspiration-grid">
-                <img src="images/RainyDays_Home3.jpg" alt="Woman skiing downhill">
                 <h2>Own the Moment</h2>
                 <p>Carve through the cold and embrace the rush.
                     When the pace pics up, your gear should keep up.
                 </p>
+                <img src="images/RainyDays_Home3.jpg" alt="Woman skiing downhill">
             </div>
         </section>
     </main>
