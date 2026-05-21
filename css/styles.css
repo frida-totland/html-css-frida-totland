@@ -91,7 +91,6 @@ ul {
 
     width: 250px;
 
-    padding: 20px;
     border-radius: 5px;
 
     background-color: #fff;
@@ -106,24 +105,35 @@ header ul {
 }
 
 .search-box {
-    width: 300px;
     background: white;
-
+    max-width: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 15px 20px;
     border-radius: 40px;
 }
 
-.search-box input{
+.search-input {
+    display: none;
+}
+
+.search-box input {
     border: none;
     outline: none;
     width: 100%;
-    background: transparent;
+    background: white;
     font-size: 0.8em;
 }
+
+#search-toggle {
+    display: none;
+}
+
+#search-toggle:checked + .searchbar + .search-input {
+    display: flex;
+}
+
 
 .hamburger {
     display: block;
@@ -137,6 +147,7 @@ header ul {
 #menu-toggle:checked + .hamburger + .nav-links {
     display: flex;
 }
+
 
 
 /* Header and Navigation on Home Page */
@@ -155,10 +166,9 @@ header ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 
     gap: 20px;
-
-    padding: 20px;
 }
 
 .navbar-home ul {
@@ -182,8 +192,8 @@ header ul {
 }
 
 .logo-section {
-    max-width: 1300px;
-    margin: auto;
+    max-width: 300px;
+    margin: 80px auto 80px 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,7 +201,7 @@ header ul {
 }
 
 .logo {
-    width: 200px;
+    width: 300px;
 }
 
 img{
@@ -200,45 +210,42 @@ img{
 
 /* Responsive Design */
 
-@media(min-width: 600px){
+@media(min-width: 950px){
+    
+    .searchbar{
+        pointer-events: none;
+    }
+    .search-input{
+        display: block;
+    }
+    
     .top-item {
         font-size: 1.2em;
     }
 
     .navbar-home {
         height: 120px;
-
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
-        padding: 0 40px;
     }
 
     .navbar-home-left {
         width: auto;
     }
 
-    /* Hide hamburger */
-
     .hamburger {
         display: none;
     }
 
-    /* Show nav links */
-
     .nav-links {
         display: flex !important;
-
         position: static;
-
         flex-direction: row;
         gap: 70px;
-
         width: auto;
-
         padding: 0;
-
         background: none;
     }
 
@@ -246,7 +253,8 @@ img{
         width: auto;
     }
 
-    .search-box {
-        width: 450px;
+    #search-toggle {
+        display: none;
     }
+
 }
