@@ -1,6 +1,6 @@
 @font-face {
     font-family: "DIN Condensed";
-    src: url(fonts/DINCondensed-Bold.ttf) format("truetype");
+    src: url(fonts/DIN Condensed Bold.ttf) format("truetype");
 }
 
 html {
@@ -20,142 +20,232 @@ html, body {
     margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Header and navigation styles */
-.top-bar {
+header {
     width: 100%;
-    background-color: #ffaf4e;
-    font-family: "DIN Condensed", Arial, sans-serif;
-    color: #0a3641;
-}
-
-.top-bar__content {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10em;
-    padding: .5em;
-    margin: 0;
-}
-
-.top-bar__words::before {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url("../assets/check.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 8px;
-    vertical-align: middle;
 }
 
 .current {
     font-weight: bold;
 }
 
-.logo {
-    max-width: 200px;
+a {
+    text-decoration: none;
+    color: #121212;
 }
 
-.navigation li {
-    display: inline-block;
-    font-size: 1em;
-    color: #0a3641;
-    padding: 20px;
-    display: inline-block;
+li {
+    list-style: none;
 }
 
-.navigation a:hover {
-    color: #0a3641;
-    font-weight: bold;
+ul {
+    padding: 0;
 }
 
-.header-home {
-    background-image: url(../images/RainyDays_Home1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 650px;
-    background-position: center;
-}
-
-h1, h2, h3 {
-    font-family: "DIN Condensed", Arial, sans-serif;
-}
-
-/* Call to action button styles */
 .cta {
-    display: inline-block;
-    padding: 10px 20px;
     background-color: #ffaf4e;
     color: #0a3641;
-    font-family: "Poppins", Arial, sans-serif;
-    font-weight: bold;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-weight: bold;
 }
-
 .cta:hover {
     background-color: #0a3641;
     color: #fff;
 }
 
-/* Carousel styles */
-.carousel {
-    background-color: #eef4f6;
+/* Top bar */
+.top-bar {
+    background-color:#ffaf4e;
+    height:50px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    font-family: "DIN Condensed", Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
-.carousel h1 {
-    text-align: center;
-    padding-top: 20px;
+.top-item {
+    display:flex;
+    align-items: baseline;
+    font-size:1em;
+    gap: 8px;
 }
 
-.carousel p {
-    text-align: center;
+.top-item i {
+    font-size:20px;
 }
 
-.carousel__images {
+/* Navigation */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    width: 250px;
+
+    padding: 20px;
+    border-radius: 5px;
+
     background-color: #fff;
-    width: auto;
-    height: 300px;
-    border-radius: 20px;
-    padding: 10px;
 }
 
-/* Home page */
-
-.navigation-home {
+.nav-links a:hover {
+    font-weight: bold;
 }
 
-.inspiration-grid {
-    background-color: #eef4f6;
+header ul {
+    display: none;
 }
 
-.inspiration-grid img {
-    width: 50%;
-    height: auto;
+.search-box {
+    width: 300px;
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+    border-radius: 40px;
 }
 
-/* Footer styles */
-footer {
-    background-color: #0a3641;
-    color: #fff;
+.search-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    font-size: 0.8em;
 }
 
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.hamburger {
+    display: block;
+    font-size: 30px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+}
+
+
+/* Header and Navigation on Home Page */
+.header-home {
+    background-image: url(../images/RainyDays_Home1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 680px;
+    background-position: center;
+}
+
+.navbar-home {
+    max-width: 1300px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.navbar-home ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-home-right {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.navbar-home-left {
+    position: relative;
+    width: 100%;
+}
+
+.logo-section {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Responsive Design */
+
+@media(min-width: 600px){
+    .top-item {
+        font-size: 1.2em;
+    }
+
+    .navbar-home {
+        height: 120px;
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 40px;
+    }
+
+    .navbar-home-left {
+        width: auto;
+    }
+
+    /* Hide hamburger */
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Show nav links */
+
+    .nav-links {
+        display: flex !important;
+
+        position: static;
+
+        flex-direction: row;
+        gap: 70px;
+
+        width: auto;
+
+        padding: 0;
+
+        background: none;
+    }
+
+    .navbar-home-right {
+        width: auto;
+    }
+
+    .search-box {
+        width: 450px;
+    }
 }

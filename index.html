@@ -14,56 +14,66 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header-home">
+    <header class="header-home"> 
         <section class="top-bar">
-            <nav>
-                <ul class="top-bar__content">
-                    <li class="top-bar__words">QUALITY</li>
-                    <li class="top-bar__words">COMFORT</li>
-                    <li class="top-bar__words">PROTECTION</li>
-                </ul>
-            </nav>
+            <div class="top-item"> 
+                <i class="fa-solid fa-check"></i> 
+                <p>QUALITY</p>
+            </div>
+            <div class="top-item"> 
+                <i class="fa-solid fa-check"></i> 
+                <p>COMFORT</p>
+            </div>
+            <div class="top-item">    
+                <i class="fa-solid fa-check"></i>
+                <p>PROTECTION</p>
+            </div>
         </section>
-        <section>
-            <div>
-                <nav>
-                    <ul class="navigation navigation-home">
-                        <li><a href="index.html" class="current">HOME</a></li>
-                        <li><a href="jackets.html">JACKETS</a></li>
-                        <li><a href="about.html">ABOUT US</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                    <ul class="navigation navigation-home">
-                        <li><input type="search" placeholder="Search..."></li>
-                        <li><i class="fa-solid fa-user" style="color: #0a3641;"></i></li>
-                        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #0a3641;"></i></a></li>
-                    </ul>
+        <section class="navbar-home">
+            <div class="navbar-home-left">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="nav-links">
+                    <li><a href="index.html" class="current">HOME</a></li>
+                    <li><a href="jackets.html">JACKETS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </nav>
             </div>
-            <div>
-                <img src="images/RainyDays_Logo.png" alt="RainyDays Logo" class="logo">
-                <a href="jackets.html" class="cta">EXPLORE</a>
-            </div>
+            <section class="navbar-home-right">
+                <div class="search-box">
+                    <input type="search" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #0a3641;"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user" style="color: #0a3641;"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #0a3641;"></i></a>
+                </div>
+            </section>
         </section>
     </header>
     <main>
+        <section>
+            <img src="images/RainyDays_Logo.png" alt="RainyDays Logo" class="logo">
+            <p><a href="jackets.html" class="cta">EXPLORE</a></p>
+        </section>
         <section class="carousel">
             <h1>BEST SELLERS</h1>
             <p>Top picks built to perform when it matters the most.</p>
             <ul>
-                <li><img src="images/RainyDays_Jacket1.jpg" alt="Red and grey jacket" class="carousel__images"></li>
-                <li><img src="images/RainyDays_Jacket2.jpg" alt="Black jacket" class="carousel__images"></li>
-                <li><img src="images/RainyDays_Jacket3.jpg" alt="Red and black jacket" class="carousel__images"></li>
-                <li><img src="images/RainyDays_Jacket4.jpg" alt="Black and white jacket" class="carousel__images"></li>
+                <li><img src="images/RainyDays_Jacket1.png" alt="Red and grey jacket" class="carousel__images"></li>
+                <li><img src="images/RainyDays_Jacket2.png" alt="Black jacket" class="carousel__images"></li>
+                <li><img src="images/RainyDays_Jacket3.png" alt="Red and black jacket" class="carousel__images"></li>
+                <li><img src="images/RainyDays_Jacket4.png" alt="Black and white jacket" class="carousel__images"></li>
             </ul>
             <a href="jackets.html" class="cta">SEE MORE</a>
         </section>
         <section>
             <h1>GET INSPIRED</h1>
             <div class="inspiration-grid">
-                <img src="images/RainyDays_Home2.jpg" alt="Two people on top of mountain in the rain">
+                <img src="images/inspiration-grid-image1.jpg" alt="Two people on top of mountain in the rain">
                 <h2>Chase the Horizon</h2>
                 <p>Breathe in the silence, feel the climb, and move beyond you limits. 
                     Every step forward is a step outside your comfort zone.
@@ -74,7 +84,7 @@
                 <p>Carve through the cold and embrace the rush.
                     When the pace pics up, your gear should keep up.
                 </p>
-                <img src="images/RainyDays_Home3.jpg" alt="Woman skiing downhill">
+                <img src="images/inspiration-grid-image2.jpg" alt="Woman skiing downhill">
             </div>
         </section>
     </main>
