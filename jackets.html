@@ -14,28 +14,44 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header-page"> 
         <section class="top-bar">
-            <nav>
-                <ul class="top-bar__content">
-                    <li class="top-bar__words">QUALITY</li>
-                    <li class="top-bar__words">COMFORT</li>
-                    <li class="top-bar__words">PROTECTION</li>
-                </ul>
-            </nav>
+            <div class="top-item"> 
+                <i class="fa-solid fa-check"></i> 
+                <p>QUALITY</p>
+            </div>
+            <div class="top-item"> 
+                <i class="fa-solid fa-check"></i> 
+                <p>COMFORT</p>
+            </div>
+            <div class="top-item">    
+                <i class="fa-solid fa-check"></i>
+                <p>PROTECTION</p>
+            </div>
         </section>
-        <section>
-            <img src="images/RainyDays_Logo.png" alt="RainyDays Logo" class="logo">
-        </section>
-        <section>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="jackets.html" class="current">JACKETS</a></li>
+        <section class="navbar-home">
+            <div class="navbar-home-left">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="nav-links">
+                    <li><a href="index.html" class="current">HOME</a></li>
+                    <li><a href="jackets.html">JACKETS</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
+                </nav>
+            </div>
+            <section class="navbar-home-right">
+                <div class="search-box">
+                    <input type="search" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #0a3641;"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user" style="color: #0a3641;"></i>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping" style="color: #0a3641;"></i></a>
+                </div>
+            </section>
         </section>
     </header>
 </body>
