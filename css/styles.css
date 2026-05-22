@@ -329,6 +329,39 @@ header ul {
     padding: 15px 30px 50px;
 }
 
+/* Jackets Page */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  border-radius: 10px;
+  background: #ffaf4e;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #0a3641;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #0a3641;
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
     background-color: #0a3641;
