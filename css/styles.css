@@ -20,6 +20,15 @@ html, body {
     margin: 0;
 }
 
+h1, h2, h3 {
+    font-family: "DIN Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 0.9em;
+}
+
 header {
     width: 100%;
 }
@@ -47,10 +56,22 @@ ul {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
 }
+
+.cta-big {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
 .cta:hover {
     background-color: #0a3641;
     color: #fff;
+}
+
+img{
+    max-width: 100%;
 }
 
 /* Top bar */
@@ -134,7 +155,6 @@ header ul {
     display: flex;
 }
 
-
 .hamburger {
     display: block;
     font-size: 30px;
@@ -148,26 +168,22 @@ header ul {
     display: flex;
 }
 
-
-
 /* Header and Navigation on Home Page */
 .header-home {
     background-image: url(../images/RainyDays_Home1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 680px;
+    min-height: 800px;
     background-position: center;
 }
 
 .navbar-home {
     max-width: 1300px;
     margin: auto;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-
     gap: 20px;
 }
 
@@ -204,11 +220,60 @@ header ul {
     width: 300px;
 }
 
-img{
-    max-width: 100%;
+/* Home Page Content */
+.carousel {
+    background-color: #eef4f6;
+    text-align: center;
+    padding: 50px 50px;
 }
 
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-content {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.carousel__images {
+    width: calc((100% - 20px) / 2);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.left {
+    left: -20px;
+}
+
+.right {
+    right: -20px;
+}
+
+
+
 /* Responsive Design */
+
+@media(min-width: 600px) {
+    .carousel__images {
+        width: calc((100% - 60px) / 4);
+    }
+}
 
 @media(min-width: 950px){
     
