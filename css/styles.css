@@ -265,6 +265,74 @@ header ul {
     right: -20px;
 }
 
+.inspiration {
+    background-color: #eef4f6;
+    text-align: center;
+}
+
+.inspiration h1 {
+    margin: 0;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.inspiration-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.inspiration-grid h2,
+.inspiration-grid p {
+    background-color: #eef4f6;
+    margin: 0;
+}
+
+.inspiration-grid h2 {
+    padding-top: 40px;
+}
+
+.inspiration-grid p {
+    padding: 15px 30px 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #0a3641;
+    color: white;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-hidden {
+    display: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer i {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+footer li:last-child a {
+    margin-right: 20px;
+}
 
 
 /* Responsive Design */
@@ -272,6 +340,45 @@ header ul {
 @media(min-width: 600px) {
     .carousel__images {
         width: calc((100% - 60px) / 4);
+    }
+
+        .inspiration-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .inspiration-grid img {
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .inspiration-grid h2,
+    .inspiration-grid p {
+        text-align: left;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .inspiration-grid h2 {
+        align-self: end;
+        padding-bottom: 15px;
+    }
+
+    .inspiration-grid p {
+        align-self: start;
+        padding-top: 0;
+    }
+
+    /*Footer*/
+        footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 70px 50px;
+    }
+
+    .footer-hidden {
+        display: block;
     }
 }
 
