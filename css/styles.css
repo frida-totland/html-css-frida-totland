@@ -287,6 +287,7 @@ header ul {
 
 .left {
     left: -20px;
+    opacity: 0.5;
 }
 
 .right {
@@ -422,6 +423,7 @@ header ul {
 }
 
 .product-price {
+    font-size: 1.5em;
     font-weight: bold;
     padding-top: 15px;
     color: #0a3641;
@@ -440,7 +442,7 @@ header ul {
 }
 
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+  opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
@@ -583,6 +585,15 @@ footer li:last-child a {
         width: auto;
     }
 
+    .navbar-home-right i {
+        font-size: 1.3em;
+    }
+
+    .navbar-home-right-icons {
+        display: flex;
+        gap: 10px;
+    }
+
     #search-toggle {
         display: none;
     }
@@ -608,7 +619,7 @@ footer li:last-child a {
     /* Jackets Page */
     .product-page__products {
         grid-template-columns: repeat(4, 1fr);
-        gap: 40px 20px;
+        gap: 30px 15px;
     }
 
     .product-page__filter {
