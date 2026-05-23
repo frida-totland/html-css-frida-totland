@@ -468,7 +468,7 @@ header ul {
     margin: 50px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap: 20px;
 }
 
 .product-specific-page__images {
