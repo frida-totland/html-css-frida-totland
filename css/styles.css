@@ -463,13 +463,12 @@ header ul {
 }
 
 /* Product Specific Page */
-.product-specific-page {
-    margin-top: 50px;
-}
-
 .product-specific-page__content {
     max-width: 1300px;
-    margin: auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
 }
 
 .product-specific-page__images {
