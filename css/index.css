@@ -1,0 +1,35 @@
+.inspiration {
+    background-color: #eef4f6;
+    text-align: center;
+}
+
+.inspiration h1 {
+    margin: 0;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.inspiration-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.inspiration-grid h2,
+.inspiration-grid p {
+    background-color: #eef4f6;
+    margin: 0;
+}
+
+.inspiration-grid h2 {
+    padding-top: 40px;
+}
+
+.inspiration-grid p {
+    padding: 15px 30px 50px;
+}
