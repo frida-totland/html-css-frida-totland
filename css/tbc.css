@@ -1,0 +1,18 @@
+.tbc-page {
+    min-height: 600px;
+    align-content: center;
+}
+
+.comming-soon {
+    display: block;
+    background-color: #eef4f6;
+    max-width: 700px;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.comming-soon__paragraph {
+    text-align: left;
+}
