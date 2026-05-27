@@ -112,3 +112,24 @@
 .in-stock__content p {
     margin: 0;
 }
+
+.product-information {
+    margin-top: 20px;
+}
+
+.product-information__content {
+    border-bottom: solid 1px #0a3641;
+}
+
+.product-information__header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-information__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #0a3641;
+}
