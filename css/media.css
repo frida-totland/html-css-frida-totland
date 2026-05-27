@@ -135,4 +135,13 @@
         margin-left: 20px;
     }
 
+    /*Cart Page*/
+    .cart-page {
+        flex-direction: row;
+    }
+
+    .cart-item img {
+        display: block;
+    }
+
 }
