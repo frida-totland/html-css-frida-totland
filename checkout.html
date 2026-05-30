@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
@@ -79,6 +79,90 @@
         </div>
       </section>
     </header>
+    <main class="checkout">
+      <section class="form-section">
+        <h1>SHIPPING AND PAYMENT</h1>
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="-" />
+          <label>Surname</label>
+          <input type="text" placeholder="-" />
+          <label>Email</label>
+          <input type="email" placeholder="-" />
+          <label>Phone number</label>
+          <input type="text" placeholder="-" />
+          <label>Address</label>
+          <input type="text" />
+          <div class="row">
+            <div>
+              <label>Postcode</label>
+              <input type="text" placeholder="-" />
+            </div>
+            <div>
+              <label>City</label>
+              <input type="text" placeholder="-" />
+            </div>
+          </div>
+          <h2>Choose Delivery</h2>
+          <label class="option">
+            <input type="checkbox" />
+            <span>PostNord Home Delivery</span>
+            <small>3–6 days</small>
+            <p>49,-</p>
+          </label>
+          <label class="option">
+            <input type="checkbox" />
+            <span>Bring Express</span>
+            <small>1–2 days</small>
+            <p>99,-</p>
+          </label>
+          <label class="option">
+            <input type="checkbox" />
+            <span>Pick up in store</span>
+            <small>1–4 days</small>
+            <p>0,-</p>
+          </label>
+          <h2>Choose Payment</h2>
+          <label class="payment">
+            <input type="checkbox" />
+            <span>Vipps</span>
+          </label>
+          <label class="payment">
+            <input type="checkbox" />
+            <span>Klarna</span>
+          </label>
+          <label class="payment">
+            <input type="checkbox" />
+            <span>Visa</span>
+          </label>
+          <a type="submit" class="cta cta-wide">PLACE ORDER</a>
+        </form>
+      </section>
+      <aside class="summary">
+        <h3>ORDER SUMMARY</h3>
+        <div class="product">
+          <div>
+            <p>Virex Outdoor</p>
+            <p>Stormveil Pro</p>
+            <p>Size: L</p>
+          </div>
+          <span>2 999,-</span>
+        </div>
+        
+        <div class="line">
+          <span>Subtotal</span>
+          <p>2 999,-</p>
+        </div>
+        <div class="line">
+          <span>Shipping</span>
+          <p>49,-</p>
+        </div>
+        <div class="line total">
+          <span>Total</span>
+          <p>3 048,-</p>
+        </div>
+      </aside>
+    </main>
     <footer>
       <section>
         <h3>LOCATIONS</h3>
