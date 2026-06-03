@@ -1,3 +1,8 @@
+.confirmation-page {
+    min-height: 600px;
+    align-content: center;
+}
+
 .confirmation {
   display: flex;
   flex-direction: column;
