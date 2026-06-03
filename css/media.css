@@ -85,17 +85,9 @@
         width: auto;
     }
 
-    .navbar-home-right i {
-        font-size: 1.3em;
-    }
-
     .navbar-home-right-icons {
         display: flex;
         gap: 10px;
-    }
-
-    #search-toggle {
-        display: none;
     }
 
     .header-page {
@@ -114,6 +106,11 @@
 
     .search-box-hidden {
         display: none;
+    }
+
+    .logo-section {
+        background-color: transparent;
+        padding: 0;
     }
 
     /* Jackets Page */
