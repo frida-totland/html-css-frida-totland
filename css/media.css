@@ -144,4 +144,15 @@
         display: block;
     }
 
+    .checkout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 70px 90px;
+    }
+
+    .summary {
+        width: 420px;
+    }
+
 }
