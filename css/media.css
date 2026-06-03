@@ -135,10 +135,12 @@
     /*Cart Page*/
     .cart-page {
         flex-direction: row;
+        gap: 60px;
     }
 
-    .cart-item img {
-        display: block;
+    .quantity p,
+    .cart-price {
+        font-size: 1.5em;
     }
 
     .checkout {

@@ -6,6 +6,12 @@
     gap: 20px;
 }
 
+.product-specific-page__images,
+.product-overview,
+.product-information {
+    margin: auto 20px;
+}
+
 .product-specific-page__images {
     display: grid;
     grid-template-columns: 1fr 3fr;

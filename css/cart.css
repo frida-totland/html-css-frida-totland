@@ -1,7 +1,6 @@
 .cart-page {
     display: flex;
     flex-direction: column;
-    gap: 60px;
     max-width: 1300px;
     margin: 40px auto;
     padding: 0 30px;
@@ -34,7 +33,6 @@
 }
 
 .cart-item img {
-    display: none;
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -61,7 +59,7 @@
 }
 
 .quantity p {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 .quantity i:hover {
@@ -72,7 +70,7 @@
 
 .cart-price {
     font-family: "DIN Condensed", Arial, sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .cart-price-total {
@@ -89,6 +87,7 @@
     padding: 28px 24px;
     margin-top: 80px;
     border-radius: 5px;
+    align-self: center;
 }
 
 .summary h2 {
