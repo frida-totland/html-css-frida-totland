@@ -1,6 +1,7 @@
 .confirmation-page {
-    min-height: 600px;
-    align-content: center;
+  min-height: 600px;
+  align-content: center;
+  margin: auto 20px;
 }
 
 .confirmation {

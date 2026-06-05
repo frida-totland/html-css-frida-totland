@@ -74,7 +74,7 @@
 }
 
 .cart-price-total {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     gap: 120px;
     margin-top: 35px;

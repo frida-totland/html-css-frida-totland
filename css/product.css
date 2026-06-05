@@ -51,12 +51,17 @@
 
 .product-overview__icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    margin-top: 20px;
+}
+
+.product-overview__icons p {
+    font-size: 0.8em;
 }
 
 .product-overview__icons i {
-    font-size: 28px;
+    font-size: 1.2em;
 }
 
 .product-overview__icons-content {
