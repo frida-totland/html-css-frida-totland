@@ -150,8 +150,8 @@ img{
     left: 0;
     width: 250px;
     padding: 20px;
-    border-radius: 5px;
-    background-color: #fff;
+    border-radius: 10px;
+    background-color: #eef4f6;
 }
 
 .nav-links a:hover {
@@ -190,14 +190,6 @@ header ul {
     width: 100%;
     background: white;
     font-size: 0.8em;
-}
-
-#search-toggle {
-    display: none;
-}
-
-#search-toggle:checked + .searchbar + .search-input {
-    display: flex;
 }
 
 .hamburger {
